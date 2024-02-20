@@ -15,7 +15,9 @@
 					rej(new Error("Not successful"));
 				}
 			}, 200)
-		})}/>
+		})}
+	on:success={() => {console.log("success")}}
+	on:failure={() => {console.log("failure")}}/>
 
 
 
